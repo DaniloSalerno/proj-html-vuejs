@@ -2,6 +2,7 @@
 import AppJumbotron from './AppJumbotron.vue';
 import AppCoaching from './AppCoaching.vue';
 import AppMentor from './AppMentor.vue';
+import AppTestimonials from './AppTestimonials.vue';
 
 
 export default {
@@ -9,7 +10,8 @@ export default {
     components: {
         AppJumbotron,
         AppCoaching,
-        AppMentor
+        AppMentor,
+        AppTestimonials
     }
 }
 </script>
@@ -18,6 +20,7 @@ export default {
     <AppJumbotron />
     <AppCoaching />
     <AppMentor />
+    <AppTestimonials />
 </template>
 
 <style lang="scss" scoped></style>
