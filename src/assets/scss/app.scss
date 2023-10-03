@@ -1,5 +1,16 @@
 @use 'bootstrap';
+@use './partials/variables' as *;
 
 body {
     font-family: Helvetica, sans-serif
+}
+
+h2 {
+    color: $mc_primary_light;
+}
+
+.container_small {
+    width: 60%;
+    max-width: 992px;
+    margin: auto;
 }

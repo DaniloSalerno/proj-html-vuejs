@@ -39,10 +39,6 @@ export default {
     background-position: left 145px bottom 60px, left 330px bottom 270px, left 480px bottom 25px, right 240px bottom 50px, right 400px bottom 35px, top right 160px, top left -300px, left 15px top 160px, top 80px right 150px, bottom right 90px;
     background-repeat: no-repeat;
 
-    h2 {
-        color: $mc_primary_light;
-    }
-
     button {
         background-color: $mc_warning;
         padding: 0.5rem 2.25rem;
