@@ -1,13 +1,15 @@
 <script>
 import AppJumbotron from './AppJumbotron.vue';
 import AppCoaching from './AppCoaching.vue';
+import AppMentor from './AppMentor.vue';
 
 
 export default {
     name: 'AppMain',
     components: {
         AppJumbotron,
-        AppCoaching
+        AppCoaching,
+        AppMentor
     }
 }
 </script>
@@ -15,6 +17,7 @@ export default {
 <template>
     <AppJumbotron />
     <AppCoaching />
+    <AppMentor />
 </template>
 
 <style lang="scss" scoped></style>
