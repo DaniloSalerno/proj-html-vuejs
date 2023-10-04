@@ -1,9 +1,7 @@
 <script>
 export default {
     name: 'AppNavItem',
-    props: {
-        link: Array
-    }
+    props: ['link']
 }
 </script>
 

@@ -1,11 +1,15 @@
 <script>
+import AppCardCoaching from './AppCardCoaching.vue';
+import { state } from '../state.js';
+
 export default {
     name: 'AppCoaching',
-    methods: {
-        getImageUrl(path) {
-            return new URL(path, import.meta.url).href
+    data() {
+        return {
+            state
         }
-    }
+    },
+    components: { AppCardCoaching }
 }
 </script>
 
@@ -28,45 +32,7 @@ export default {
 
             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
 
-                <div class="col">
-                    <img :src="getImageUrl('../assets/img/artist-box-image-01.png')" alt="">
-                    <!-- <img src="../assets/img/artist-box-image-01.png" alt=""> -->
-                    <h5>Online Coures</h5>
-                    <div>
-                        Online art coasching now offers you s very powerful way to redesign you artist mind.
-                    </div>
-                </div>
-                <!-- /.col -->
-
-                <div class="col even_col">
-                    <img :src="getImageUrl('../assets/img/artist-box-image-02.png')" alt="">
-                    <!-- <img src="../assets/img/artist-box-image-01.png" alt=""> -->
-                    <h5>One to One</h5>
-                    <div>
-                        Gettin the necessary clarity about the current state to help you imrove your ability.
-                    </div>
-                </div>
-                <!-- /.col -->
-
-                <div class="col">
-                    <img :src="getImageUrl('../assets/img/artist-box-image-03.png')" alt="">
-                    <!-- <img src="../assets/img/artist-box-image-01.png" alt=""> -->
-                    <h5>Anywhere</h5>
-                    <div>
-                        Access to valurable and portable program which allow you to setup and live anywhere you want.
-                    </div>
-                </div>
-                <!-- /.col -->
-
-                <div class="col even_col">
-                    <img :src="getImageUrl('../assets/img/artist-box-image-04.png')" alt="">
-                    <!-- <img src="../assets/img/artist-box-image-01.png" alt=""> -->
-                    <h5>On Time</h5>
-                    <div>
-                        Punctually is our top priority because it's an essential criteria to assess a program quality.
-                    </div>
-                </div>
-                <!-- /.col -->
+                <AppCardCoaching :card="card" v-for="card in this.state.cardCoaching" />
 
             </div>
             <!-- /.row -->
@@ -92,12 +58,5 @@ export default {
         padding-top: 5rem;
     }
 
-    .even_col {
-        padding-top: 4.5rem;
-    }
-
-    h5 {
-        padding: 1rem 0;
-    }
 }
 </style>
