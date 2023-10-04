@@ -4,6 +4,7 @@ import AppCoaching from './AppCoaching.vue';
 import AppMentor from './AppMentor.vue';
 import AppTestimonials from './AppTestimonials.vue';
 import AppCourses from './AppCourses.vue';
+import AppBlog from './AppBlog.vue';
 
 
 export default {
@@ -13,7 +14,8 @@ export default {
         AppCoaching,
         AppMentor,
         AppTestimonials,
-        AppCourses
+        AppCourses,
+        AppBlog
     }
 }
 </script>
@@ -24,6 +26,7 @@ export default {
     <AppMentor />
     <AppTestimonials />
     <AppCourses />
+    <AppBlog />
 </template>
 
 <style lang="scss" scoped></style>
