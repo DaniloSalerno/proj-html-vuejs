@@ -36,7 +36,7 @@ export default {
                             </div>
                             <!-- /.category -->
 
-                            <a href="##" class="fw-bold py-3 text-decoration-none text-black d-inline-block">
+                            <a href="##" class="fw-bold py-3 text-black d-inline-block">
                                 Brush Strokes Energize Trees in Paintings
                             </a>
 
@@ -63,7 +63,7 @@ export default {
                                 </div>
 
                             </div>
-                            <!-- /.course_info -->
+                            <!-- /.blog_info -->
 
                         </div>
                         <!-- /.card-body -->
@@ -86,9 +86,9 @@ export default {
                             </div>
                             <!-- /.category -->
 
-                            <h5 class="fw-bold fs-3 py-3">
+                            <a href="##" class="fw-bold fs-3 py-3 text-white d-inline-block">
                                 Connection Between Self-Portraits and Identify
-                            </h5>
+                            </a>
 
                             <div class="blog_info d-flex align-items-center gap-4">
 
@@ -137,7 +137,7 @@ export default {
                             </div>
                             <!-- /.category -->
 
-                            <a href="##" class="fw-bold py-3 text-decoration-none text-black d-inline-block">
+                            <a href="##" class="fw-bold py-3 text-black d-inline-block">
                                 Pocket-Sized Notebooks Hold Miniature Paintings
                             </a>
 
@@ -212,9 +212,12 @@ export default {
 
     background-color: $mc_light;
 
-    .col a:hover {
-        text-decoration: underline;
+    a {
+        text-decoration: none;
 
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
 
