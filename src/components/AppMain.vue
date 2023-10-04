@@ -6,6 +6,8 @@ import AppTestimonials from './AppTestimonials.vue';
 import AppCourses from './AppCourses.vue';
 import AppBlog from './AppBlog.vue';
 import AppEvents from './AppEvents.vue';
+import AppNewsletter from './AppNewsletter.vue';
+
 
 
 export default {
@@ -17,7 +19,8 @@ export default {
         AppTestimonials,
         AppCourses,
         AppBlog,
-        AppEvents
+        AppEvents,
+        AppNewsletter
     }
 }
 </script>
@@ -30,6 +33,7 @@ export default {
     <AppCourses />
     <AppBlog />
     <AppEvents />
+    <AppNewsletter />
 </template>
 
 <style lang="scss" scoped></style>
