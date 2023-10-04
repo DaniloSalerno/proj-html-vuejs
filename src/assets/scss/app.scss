@@ -9,6 +9,41 @@ h2 {
     color: $mc_primary_light;
 }
 
+
+.btn_warning {
+    background-color: $mc_warning;
+    color: $mc_white;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $mc_primary_light;
+        color: white;
+        transition: all, 0.3s;
+    }
+}
+
+.btn_warning_reverse {
+    color: $mc_warning;
+    font-weight: bold;
+    background-color: #ef703130;
+
+    svg {
+        filter: invert(72%) sepia(46%) saturate(6626%) hue-rotate(340deg) brightness(97%) contrast(94%);
+    }
+
+    &:hover {
+        background-color: $mc_primary_light;
+        color: white;
+        transition: all, 0.3s;
+
+        svg {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(270deg) brightness(102%) contrast(102%);
+            transition: filter, 0.3s;
+
+        }
+    }
+}
+
 .container_small {
     width: 60%;
     max-width: 992px;

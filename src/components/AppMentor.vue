@@ -40,7 +40,7 @@ export default {
                         As an artist and educator for nearly 30 years, I understand what it takes to create.
                     </div>
 
-                    <a class="btn mt-4" href="##">Get started today</a>
+                    <a class="btn btn_warning_reverse mt-4" href="##">Get started today</a>
                 </div>
                 <!-- /.col -->
 
@@ -67,10 +67,7 @@ export default {
     background-position: bottom right;
     background-repeat: no-repeat;
 
-    .col a {
-        color: $mc_warning;
-        font-weight: bold;
-        background-color: #ef703130;
+    .btn_warning_reverse {
         padding: 0.75rem 2.5rem;
     }
 

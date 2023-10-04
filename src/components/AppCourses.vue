@@ -419,7 +419,7 @@ export default {
             <!-- /.row -->
 
             <div class="text-center py-5">
-                <a class="btn d-inline-flex align-items-center gap-1" href="##">
+                <a class="btn btn_warning_reverse d-inline-flex align-items-center gap-1" href="##">
                     <span>View all courses</span>
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                         <path
@@ -444,7 +444,7 @@ export default {
     background-position: top 100px right, left top, left 50px top 540px;
     background-repeat: no-repeat;
 
-    a {
+    .card-body a {
         font-size: 1.25em;
         text-decoration: none;
         font-size: bold;
@@ -470,15 +470,8 @@ export default {
         }
     }
 
-    a.btn {
-        color: $mc_warning;
-        font-weight: bold;
-        background-color: #ef703130;
+    a.btn_warning_reverse {
         padding: 0.75rem 2.5rem;
-
-        svg {
-            filter: invert(72%) sepia(46%) saturate(6626%) hue-rotate(340deg) brightness(97%) contrast(94%);
-        }
     }
 
     .card:hover {

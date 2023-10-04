@@ -28,9 +28,9 @@ export default {
             </div>
             <!-- /.countdown -->
 
-            <button class="btn">
+            <a href="##" class="btn btn_warning">
                 Get ticket
-            </button>
+            </a>
             <!-- /.btn -->
 
         </div>
@@ -208,11 +208,8 @@ header {
             color: $mc_dark;
         }
 
-        button {
-            background-color: $mc_warning;
+        .btn_warning {
             padding: 0.1rem 2.25rem;
-            color: $mc_white;
-            font-weight: bold;
         }
     }
 

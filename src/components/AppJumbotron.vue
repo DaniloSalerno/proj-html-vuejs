@@ -19,9 +19,9 @@ export default {
                     Artist Coaching And Mentoring Might Be for You.
                 </div>
 
-                <button class="btn mt-3">
+                <a href="##" class="btn mt-3 btn_warning">
                     Get started today
-                </button>
+                </a>
 
             </div>
         </div>
@@ -81,11 +81,8 @@ export default {
         background-color: $mc_white;
     }
 
-    .jumbo_content button {
-        background-color: $mc_warning;
+    .jumbo_content .btn_warning {
         padding: 0.5rem 2.25rem;
-        color: $mc_white;
-        font-weight: bold;
     }
 }
 </style>
