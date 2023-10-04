@@ -36,7 +36,7 @@ export default {
                             </div>
                             <!-- /.price -->
 
-                            <h5 class="fw-bold py-3">The Acrylic Painting Academy</h5>
+                            <a href="##" class="d-inline-block py-3">The Acrylic Painting Academy</a>
 
                             <div class="course_info d-flex align-items-center gap-4">
 
@@ -85,7 +85,7 @@ export default {
                             </div>
                             <!-- /.price -->
 
-                            <h5 class="fw-bold py-3">Drawing and Shalding: Complete Course</h5>
+                            <a href="##" class="d-inline-block py-3">Drawing and Shalding: Complete Course</a>
 
                             <div class="course_info d-flex align-items-center gap-4">
 
@@ -134,7 +134,7 @@ export default {
                             </div>
                             <!-- /.price -->
 
-                            <h5 class="fw-bold py-3">The Color Theory for Digital Artist</h5>
+                            <a href="##" class="d-inline-block py-3">The Color Theory for Digital Artist</a>
 
                             <div class="course_info d-flex align-items-center gap-4">
 
@@ -183,7 +183,7 @@ export default {
                             </div>
                             <!-- /.price -->
 
-                            <h5 class="fw-bold py-3">Ultimate Guide to Digital Sketching for Beginner</h5>
+                            <a href="##" class="d-inline-block py-3">Ultimate Guide to Digital Sketching for Beginner</a>
 
                             <div class="course_info d-flex align-items-center gap-4">
 
@@ -232,7 +232,7 @@ export default {
                             </div>
                             <!-- /.price -->
 
-                            <h5 class="fw-bold py-3">Portrait Drawing The Wmart Way</h5>
+                            <a href="##" class="d-inline-block py-3">Portrait Drawing The Wmart Way</a>
 
                             <div class="course_info d-flex align-items-center gap-4">
 
@@ -281,7 +281,7 @@ export default {
                             </div>
                             <!-- /.price -->
 
-                            <h5 class="fw-bold py-3">Mastering Watercolor Painting from Beginner</h5>
+                            <a href="##" class="d-inline-block py-3">Mastering Watercolor Painting from Beginner</a>
 
                             <div class="course_info d-flex align-items-center gap-4">
 
@@ -330,7 +330,7 @@ export default {
                             </div>
                             <!-- /.price -->
 
-                            <h5 class="fw-bold py-3">The Art & Scienze of Drawing</h5>
+                            <a href="##" class="d-inline-block py-3">The Art & Scienze of Drawing</a>
 
                             <div class="course_info d-flex align-items-center gap-4">
 
@@ -379,7 +379,7 @@ export default {
                             </div>
                             <!-- /.price -->
 
-                            <h5 class="fw-bold py-3">The Colored Pencil Drawing Course</h5>
+                            <a href="##" class="d-inline-block py-3">The Colored Pencil Drawing Course</a>
 
                             <div class="course_info d-flex align-items-center gap-4">
 
@@ -444,8 +444,15 @@ export default {
     background-position: top 100px right, left top, left 50px top 540px;
     background-repeat: no-repeat;
 
-    h5 {
-        font-size: 1.15rem;
+    a {
+        font-size: 1.25em;
+        text-decoration: none;
+        font-size: bold;
+        color: black;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     .price {
@@ -471,6 +478,14 @@ export default {
 
         svg {
             filter: invert(72%) sepia(46%) saturate(6626%) hue-rotate(340deg) brightness(97%) contrast(94%);
+        }
+    }
+
+    .card:hover {
+        .card-body {
+            border: 2px solid $mc_warning;
+            margin-top: -2rem;
+            background-color: white;
         }
     }
 
