@@ -206,8 +206,8 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 #blog {
-    background-image: url('../assets/img/maxcoach-shape-14.png');
-    background-position: center;
+    background-image: url('../assets/img/maxcoach-shape-14.png'), url('../assets/img/maxcoach-shape-05.png'), url('../assets/img/maxcoach-shape-12-150x150.png');
+    background-position: center, left 100px top 320px, right bottom 100px;
     background-repeat: no-repeat;
 
     background-color: $mc_light;

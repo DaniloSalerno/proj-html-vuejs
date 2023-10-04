@@ -83,9 +83,9 @@ export default {
 #artist_coaching {
     height: 670px;
     background-image: url('../assets/img/maxcoach-shape-13.png'), url('../assets/img/maxcoach-shape-14.png'), url('../assets/img/artist-shape-01.png');
-    /* ULTIMA IMMAGINE DA FIXARE,NON è QUELLA CORRETTA */
-    background-position: right -40px center, left center, left top -50px;
+    background-position: right -40px center, left center, left top 50px;
     background-repeat: no-repeat;
+    background-size: 10%, 100%, 30%;
 
     .container_small,
     .row {

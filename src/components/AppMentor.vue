@@ -61,19 +61,27 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
-.col a {
-    color: $mc_warning;
-    font-weight: bold;
-    background-color: #ef703130;
-    padding: 0.75rem 2.5rem;
-}
+#artist_mentor {
 
-.images {
-    height: 740px;
-
-    background-image: url('../assets/img/icon-youtube-play.png'), url('../assets/img/artist-video-poster.jpg'), url('../assets/img/maxcoach-shape-05.png'), url('../assets/img/maxcoach-shape-12-150x150.png');
-    background-position: center, center, top 65px left 320px, bottom 65px right 270px;
+    background-image: url('../assets/img/wave(1).svg');
+    background-position: bottom right;
     background-repeat: no-repeat;
+
+    .col a {
+        color: $mc_warning;
+        font-weight: bold;
+        background-color: #ef703130;
+        padding: 0.75rem 2.5rem;
+    }
+
+    .images {
+        height: 740px;
+
+        background-image: url('../assets/img/icon-youtube-play.png'), url('../assets/img/artist-video-poster.jpg'), url('../assets/img/maxcoach-shape-05.png'), url('../assets/img/maxcoach-shape-12-150x150.png');
+        background-position: center, center, top 65px left 320px, bottom 65px right 270px;
+        background-repeat: no-repeat;
+
+    }
 
 }
 </style>

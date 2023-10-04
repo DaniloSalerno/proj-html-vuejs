@@ -440,14 +440,23 @@ export default {
 
 #courses {
 
+    background-image: url('../assets/img/artist-shape-01.png'), url('../assets/img/artist-shape-02.png'), url('../assets/img/maxcoach-shape-05.png');
+    background-position: top 100px right, left top, left 50px top 540px;
+    background-repeat: no-repeat;
+
+    h5 {
+        font-size: 1.15rem;
+    }
+
     .price {
         color: $mc_warning;
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         font-weight: bold;
     }
 
     .course_info {
         color: #808080;
+        font-size: 0.8rem;
 
         svg {
             filter: invert(55%) sepia(0%) saturate(69%) hue-rotate(225deg) brightness(91%) contrast(86%);
