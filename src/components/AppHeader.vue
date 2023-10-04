@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header id="header">
 
         <div id="event_timer" class="d-flex align-items-center justify-content-center gap-4">
 
@@ -147,7 +147,7 @@ export default {
             </ul>
             <!-- /.nav -->
 
-            <div id="socials" class="d-flex align-items-center gap-3">
+            <div class="socials d-flex align-items-center gap-3">
 
                 <a href="##">
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
@@ -178,7 +178,7 @@ export default {
                 </a>
 
             </div>
-            <!-- /#socials -->
+            <!-- /.socials -->
 
         </nav>
         <!-- /.navbar -->
@@ -229,8 +229,9 @@ header {
         }
     }
 
-    #socials {
+    .socials {
         svg {
+            filter: invert(54%) sepia(0%) saturate(0%) hue-rotate(239deg) brightness(94%) contrast(93%);
             font-size: 1rem;
         }
     }

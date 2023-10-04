@@ -1,0 +1,216 @@
+<script>
+export default {
+    name: 'AppFooter',
+    methods: {
+        getImageUrl(path) {
+            return new URL(path, import.meta.url).href
+        }
+    }
+}
+</script>
+
+<template>
+    <footer>
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 pb-5">
+
+                <div class="col">
+
+                    <div class="contact_details d-flex flex-column gap-2">
+
+                        <h6>Address</h6>
+
+                        <div>382 NE 191st St # 87394 Miami,FL 33179-3899</div>
+
+                        <div>+1 (305) 547-9909 (9am - 5pm,EST Monday - Friday)</div>
+
+                        <div>support@maxcoach.com</div>
+
+                        <div class="socials d-flex align-items-center gap-3">
+
+                            <a href="##">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                </svg>
+                            </a>
+
+                            <a href="##">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                </svg>
+                            </a>
+
+                            <a href="##">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg>
+                            </a>
+
+                            <a href="##">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                    <path
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                </svg>
+                            </a>
+
+                        </div>
+                        <!-- /.socials -->
+                    </div>
+                </div>
+                <!-- /.col -->
+
+                <div class="col">
+
+                    <div class="row">
+
+                        <div class="col-6">
+                            <h6>Explore</h6>
+                            <ul class="list-unstyled p-0">
+                                <li><a href="##">Start here</a></li>
+                                <li><a href="##">Success story</a></li>
+                                <li><a href="##">Blog</a></li>
+                                <li><a href="##">Courses</a></li>
+                                <li><a href="##">Contact us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6">
+                            <h6>Information</h6>
+                            <ul class="list-unstyled p-0">
+                                <li><a href="##">Membership</a></li>
+                                <li><a href="##">Purchase guide</a></li>
+                                <li><a href="##">Privacy policy</a></li>
+                                <li><a href="##">Terms of services</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+                <!-- /.col -->
+
+                <div class="col">
+
+                    <h6>Instagram <span>@maxcoach</span></h6>
+
+                    <div class="row">
+
+                        <div class="col-4">
+                            <img :src="getImageUrl('../assets/img/artist-blog-03-480x356.jpeg')" alt="">
+                        </div>
+                        <!-- /.col -->
+
+                        <div class="col-4">
+                            <img :src="getImageUrl('../assets/img/artist-event-01-250x300.jpg')" alt="">
+                        </div>
+                        <!-- /.col -->
+
+                        <div class="col-4">
+                            <img :src="getImageUrl('../assets/img/artist-blog-03-480x356.jpeg')" alt="">
+                        </div>
+                        <!-- /.col -->
+
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+                <!-- /.col -->
+
+            </div>
+            <!-- /.row -->
+
+            <div class="copyrights pt-5 d-flex justify-content-center">
+                &copy; 2020 Maxcoach. All Rights Reserved
+            </div>
+
+            <a class="go_up" href="#header">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 384 512">
+                    <path
+                        d="M214.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3V480c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128z" />
+                </svg>
+            </a>
+
+
+        </div>
+        <!-- /.container -->
+
+    </footer>
+</template>
+
+<style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
+
+footer {
+    padding: 6rem 0;
+    position: relative;
+
+    h6 {
+        font-weight: bold;
+        color: black;
+
+        span {
+            color: $mc_warning;
+            font-size: 0.8rem;
+        }
+    }
+
+
+    img {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .contact_details {
+        font-size: 0.8rem;
+        color: #808080;
+
+        .socials {
+            padding-top: 1rem;
+
+            svg {
+                filter: invert(54%) sepia(0%) saturate(0%) hue-rotate(239deg) brightness(94%) contrast(93%);
+                font-size: 1rem;
+            }
+        }
+    }
+
+    li a {
+        color: #808080;
+        text-decoration: none;
+        font-size: 0.8rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+    .copyrights {
+        color: #808080;
+        font-size: 0.75rem;
+    }
+
+    .go_up {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        background-color: $mc_warning;
+        width: 3rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(270deg) brightness(102%) contrast(102%);
+        }
+    }
+
+}
+</style>
