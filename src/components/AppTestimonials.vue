@@ -36,17 +36,8 @@ export default {
             <!-- /.row row-cols-3 -->
 
             <div class="pages d-flex justify-content-center align-items-center">
-                <button class="btn" :class="this.state.activeTestimonial == 0 ? 'active' : ''"
-                    @click="this.state.activeTestimonial = 0">
-                </button>
-                <button class="btn" :class="this.state.activeTestimonial == 1 ? 'active' : ''"
-                    @click="this.state.activeTestimonial = 1">
-                </button>
-                <button class="btn" :class="this.state.activeTestimonial == 2 ? 'active' : ''"
-                    @click="this.state.activeTestimonial = 2">
-                </button>
-                <button class="btn" :class="this.state.activeTestimonial == 3 ? 'active' : ''"
-                    @click="this.state.activeTestimonial = 3">
+                <button class="btn" v-for="(n, i) in this.state.cardTestimonial.length"
+                    :class="this.state.activeTestimonial == i ? 'active' : ''" @click="this.state.activeTestimonial = i">
                 </button>
             </div>
             <!-- /.pages -->
