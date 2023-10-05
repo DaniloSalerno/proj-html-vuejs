@@ -207,4 +207,6 @@ export const state = reactive({
     ],
 
     activeTestimonial: 0,
+
+    eventTimer: true,
 })

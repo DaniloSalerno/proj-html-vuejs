@@ -17,7 +17,7 @@ export default {
 <template>
     <header id="header">
 
-        <div id="event_timer" class="d-flex align-items-center justify-content-center gap-4">
+        <div v-if="this.state.eventTimer" id="event_timer" class="d-flex align-items-center justify-content-center gap-4">
 
             <div class="event_description">
                 Starts <span>tomorrow!</span> Our biggest event of the year...
