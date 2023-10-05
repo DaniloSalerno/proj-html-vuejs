@@ -1,8 +1,14 @@
 <script>
 import AppSocial from './AppSocial.vue';
+import { state } from '../state.js';
 
 export default {
     name: 'AppFooter',
+    data() {
+        return {
+            state
+        }
+    },
     methods: {
         getImageUrl(path) {
             return new URL(path, import.meta.url).href;
@@ -42,21 +48,15 @@ export default {
                         <div class="col-6">
                             <h6>Explore</h6>
                             <ul class="list-unstyled p-0">
-                                <li><a href="##">Start here</a></li>
-                                <li><a href="##">Success story</a></li>
-                                <li><a href="##">Blog</a></li>
-                                <li><a href="##">Courses</a></li>
-                                <li><a href="##">Contact us</a></li>
+                                <li v-for="link in this.state.footerExplore"><a :href="link.href">{{ link.name }}</a></li>
                             </ul>
                         </div>
 
                         <div class="col-6">
                             <h6>Information</h6>
                             <ul class="list-unstyled p-0">
-                                <li><a href="##">Membership</a></li>
-                                <li><a href="##">Purchase guide</a></li>
-                                <li><a href="##">Privacy policy</a></li>
-                                <li><a href="##">Terms of services</a></li>
+                                <li v-for="link in this.state.footerInformation"><a :href="link.href">{{ link.name }}</a>
+                                </li>
                             </ul>
                         </div>
 
@@ -83,7 +83,7 @@ export default {
                         <!-- /.col -->
 
                         <div class="col-4">
-                            <img :src="getImageUrl('../assets/img/artist-blog-03-480x356.jpeg')" alt="">
+                            <img :src="getImageUrl('../assets/img/artist-event-02-250x300.jpg')" alt="">
                         </div>
                         <!-- /.col -->
 

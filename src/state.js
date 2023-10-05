@@ -163,5 +163,48 @@ export const state = reactive({
 
     ],
 
+    footerExplore: [
+        {
+            name: 'Start here',
+            href: '##'
+        },
+        {
+            name: 'Success story',
+            href: '##'
+        },
+        {
+            name: 'Blog',
+            href: '##'
+        },
+        {
+            name: 'Courses',
+            href: '##'
+        },
+        {
+            name: 'Contact us',
+            href: '##'
+        },
+    ],
+
+
+    footerInformation: [
+        {
+            name: 'Membership',
+            href: '##'
+        },
+        {
+            name: 'Purchase guide',
+            href: '##'
+        },
+        {
+            name: 'Privacy policy',
+            href: '##'
+        },
+        {
+            name: 'Terms of services',
+            href: '##'
+        }
+    ],
+
     activeTestimonial: 0,
 })
