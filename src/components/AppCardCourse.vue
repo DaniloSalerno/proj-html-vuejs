@@ -98,6 +98,7 @@ export default {
         border: 2px solid $mc_warning;
         margin-top: -2rem;
         background-color: white;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
     }
 }
 </style>
