@@ -1,11 +1,20 @@
 <script>
+import AppCardTestimonial from './AppCardTestimonial.vue';
+import { state } from '../state.js';
+
 export default {
     name: 'AppTestimonials',
+    data() {
+        return {
+            state
+        }
+    },
     methods: {
         getImageUrl(path) {
-            return new URL(path, import.meta.url).href
+            return new URL(path, import.meta.url).href;
         }
-    }
+    },
+    components: { AppCardTestimonial }
 }
 </script>
 
@@ -21,161 +30,24 @@ export default {
 
             <div class="row row-cols-3">
 
-                <div class="col">
-
-                    <div class="card border-0">
-
-                        <div class="card-body px-4">
-
-                            <h5 class="fw-bold">
-                                Professional team of specialist and passionate mentors at reach
-                            </h5>
-
-                            <div class="py-4">
-                                I need to get a certification for English proficiency and MaxCoach is my best choice. Their
-                                tutors are smart and professional when dealing with students
-                            </div>
-
-                            <div class="d-flex">
-
-                                <img class="avatar" width="60"
-                                    :src="getImageUrl('../assets/img/artist-testimonial-avatar-01.jpg')" alt="">
-
-                                <div class="ps-3">
-                                    <div class="fw-bold">Madley Pondor</div>
-                                    <div class="text-secondary">/ IT Specialist</div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- /.card-body -->
-
-                    </div>
-                    <!-- /.card -->
-
-                </div>
-                <!-- /.col -->
-
-                <div class="col active">
-
-                    <div class="card border-0">
-
-                        <div class="card-body px-4">
-
-                            <h5 class="fw-bold">
-                                It's a choice of quality for people with special needs
-                            </h5>
-
-                            <div class="py-4">
-                                I'm a very strict person so I require everything to be organized and neat. Then,I'll ben
-                                able to make things right and shine. MaxCoach guys just got me
-                            </div>
-
-                            <div class="d-flex">
-
-                                <img class="avatar" width="60"
-                                    :src="getImageUrl('../assets/img/artist-testimonial-avatar-02.jpg')" alt="">
-
-                                <div class="ps-3">
-                                    <div class="fw-bold">Florence Themes</div>
-                                    <div class="text-secondary">/ Multimedia Admin</div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- /.card-body -->
-
-                    </div>
-                    <!-- /.card -->
-
-                </div>
-                <!-- /.col -->
-
-                <div class="col d-none">
-
-                    <div class="card border-0">
-
-                        <div class="card-body px-4">
-
-                            <h5 class="fw-bold">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </h5>
-
-                            <div class="py-4">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugiat impedit, rerum
-                                explicabo delectus necessitatibus dolores magnam, ex dolor velit vel odit sequi ad,
-                                doloribus non mollitia! Nihil, rerum fuga?
-                            </div>
-
-                            <div class="d-flex">
-
-                                <img class="avatar" width="60"
-                                    :src="getImageUrl('../assets/img/artist-testimonial-avatar-03.jpg')" alt="">
-
-                                <div class="ps-3">
-                                    <div class="fw-bold">Lorem, ipsum.</div>
-                                    <div class="text-secondary">/ Lorem</div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- /.card-body -->
-
-                    </div>
-                    <!-- /.card -->
-
-                </div>
-                <!-- /.col -->
-
-                <div class="col">
-
-                    <div class="card border-0">
-
-                        <div class="card-body px-4">
-
-                            <h5 class="fw-bold">
-                                High level of efficiency scientific teaching methods
-                            </h5>
-
-                            <div class="py-4">
-                                I am free to learn at my own pace, follow my own schedule and choose the subject I want to
-                                learn from the syllabus. Great study portal for people like me.
-                            </div>
-
-                            <div class="d-flex">
-
-                                <img class="avatar" width="60"
-                                    :src="getImageUrl('../assets/img/artist-testimonial-avatar-04.jpg')" alt="">
-
-                                <div class="ps-3">
-                                    <div class="fw-bold">Mina Hollace</div>
-                                    <div class="text-secondary">/ Freelancer</div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- /.card-body -->
-
-                    </div>
-                    <!-- /.card -->
-
-                </div>
-                <!-- /.col -->
-
-
+                <AppCardTestimonial :card="card" v-for="card in this.state.cardTestimonial" />
 
             </div>
             <!-- /.row row-cols-3 -->
 
-            <div class="pages d-flex justify-content-center align-items-center gap-3">
-                <div class="active"></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="pages d-flex justify-content-center align-items-center">
+                <button class="btn" :class="this.state.activeTestimonial == 0 ? 'active' : ''"
+                    @click="this.state.activeTestimonial = 0">
+                </button>
+                <button class="btn" :class="this.state.activeTestimonial == 1 ? 'active' : ''"
+                    @click="this.state.activeTestimonial = 1">
+                </button>
+                <button class="btn" :class="this.state.activeTestimonial == 2 ? 'active' : ''"
+                    @click="this.state.activeTestimonial = 2">
+                </button>
+                <button class="btn" :class="this.state.activeTestimonial == 3 ? 'active' : ''"
+                    @click="this.state.activeTestimonial = 3">
+                </button>
             </div>
             <!-- /.pages -->
 
@@ -192,10 +64,6 @@ export default {
     height: 740px;
     background-color: $mc_light;
 
-    .avatar {
-        aspect-ratio: 1/1;
-        border-radius: 50%;
-    }
 
     .col {
         opacity: 0.2;
@@ -208,13 +76,15 @@ export default {
     .pages {
         padding: 5rem 0;
 
-        div {
+        button {
             display: flex;
             align-content: center;
+            border: none;
+            padding: 1rem;
         }
     }
 
-    .pages>div:before {
+    .pages>button:before {
 
         content: '';
         display: inline-block;
@@ -225,7 +95,7 @@ export default {
 
     }
 
-    .pages>div.active:before {
+    .pages>button.active:before {
 
         content: '';
         display: inline-block;
