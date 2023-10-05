@@ -33,7 +33,7 @@ export default {
     <div class="col" @click="this.slideCard()"
         :class="card.id == this.state.activeTestimonial ? 'active' : '', this.state.activeTestimonial == 1 && card.id == 3 || this.state.activeTestimonial == 2 && card.id == 0 || this.state.activeTestimonial == 3 && card.id == 1 || this.state.activeTestimonial == 0 && card.id == 2 ? 'd-none' : '', this.state.activeTestimonial == 0 && card.id == 3 ? 'order-first' : '' || card.id == 0 && this.state.activeTestimonial == 3 ? 'order-last' : ''">
 
-        <div class="card border-0">
+        <div class="card border-0 p-3">
 
             <div class="card-body px-4">
 
@@ -50,8 +50,8 @@ export default {
                     <img class="avatar" width="60" :src="getImageUrl(`../assets/img/${card.avatarPath}`)" alt="">
 
                     <div class="ps-3">
-                        <div class="fw-bold">{{ card.name }}</div>
-                        <div class="text-secondary">{{ card.job }}</div>
+                        <div class="name">{{ card.name }}</div>
+                        <div class="job">{{ card.job }}</div>
                     </div>
 
                 </div>
@@ -78,5 +78,15 @@ export default {
 
 .col.active {
     opacity: 1;
+}
+
+.name {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.job {
+    color: #808080;
+    font-size: 0.85rem;
 }
 </style>

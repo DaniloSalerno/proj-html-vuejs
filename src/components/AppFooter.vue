@@ -155,6 +155,7 @@ footer {
 
     .copyrights {
         color: #808080;
+        font-weight: bold;
         font-size: 0.75rem;
     }
 

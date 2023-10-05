@@ -50,7 +50,7 @@ export default {
 
             <img width="160" src="../assets/img/dark-logo.png" alt="">
 
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav gap-3">
 
                 <AppNavItem :link="link" v-for="link in this.state.nav_links" />
 
@@ -73,6 +73,7 @@ header {
 
     #event_timer {
         height: 50px;
+        background-color: $mc_light;
 
         .event_description {
             color: grey;

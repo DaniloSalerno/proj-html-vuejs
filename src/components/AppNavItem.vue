@@ -29,7 +29,8 @@ nav {
     height: 80px;
 
     a {
-        color: black
+        color: black;
+        font-size: 0.9rem;
     }
 
     .chevron_link {
