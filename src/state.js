@@ -69,5 +69,64 @@ export const state = reactive({
         }
     ],
 
+    cardCourse: [
+        {
+            title: 'The Acrylic Painting Academy',
+            price: '$18.00',
+            imgPath: 'artist-course-01-480x480.jpg',
+            lessons: '4 Lessons',
+            students: '50 Students'
+        },
+        {
+            title: 'Drawing and Shalding: Complete Course',
+            price: '$21.00',
+            imgPath: 'artist-course-02-480x480.jpg',
+            lessons: '14 Lessons',
+            students: '50 Students'
+        },
+        {
+            title: 'The Color Theory for Digital Artist',
+            price: '$19.00',
+            imgPath: 'artist-course-03-480x480.jpg',
+            lessons: '7 Lessons',
+            students: '50 Students'
+        },
+        {
+            title: 'Ultimate Guide to Digital Sketching for Beginner',
+            price: '$35.00',
+            imgPath: 'artist-course-04-480x480.jpg',
+            lessons: '14 Lessons',
+            students: '50 Students'
+        },
+        {
+            title: 'Portrait Drawing The Wmart Way',
+            price: '$19.00',
+            imgPath: 'artist-course-05-480x480.jpg',
+            lessons: '2 Lessons',
+            students: '50 Students'
+        },
+        {
+            title: 'Mastering Watercolor Painting from Beginner',
+            price: '$19.00',
+            imgPath: 'artist-course-06-480x480.jpg',
+            lessons: '9 Lessons',
+            students: '50 Students'
+        },
+        {
+            title: 'The Art & Scienze of Drawing',
+            price: '$25.00',
+            imgPath: 'artist-course-07-480x480.jpg',
+            lessons: '4 Lessons',
+            students: '50 Students'
+        },
+        {
+            title: 'The Colored Pencil Drawing Course',
+            price: '$22.00',
+            imgPath: 'artist-course-08-480x480.jpg',
+            lessons: '6 Lessons',
+            students: '50 Students'
+        }
+    ],
+
     activeTestimonial: 0,
 })
