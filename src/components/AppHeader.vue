@@ -62,6 +62,10 @@ export default {
         </nav>
         <!-- /.navbar -->
 
+        <button class="btn delete_event" @click="this.state.eventTimer = false">
+
+        </button>
+
     </header>
 </template>
 
@@ -69,6 +73,14 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 header {
+
+    position: relative;
+
+    .delete_event {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 
 
     #event_timer {
