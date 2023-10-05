@@ -128,5 +128,40 @@ export const state = reactive({
         }
     ],
 
+    cardEvent: [
+        {
+            date: 'NOV 22, 2020',
+            title: 'Storytelling Workshop',
+            imgPath: 'artist-event-04-250x300.jpg',
+            location: 'Texas, US',
+            text_position: 'right'
+        },
+
+        {
+            date: '0CT 10, 2020',
+            title: 'Painting Art Contest 2020',
+            imgPath: 'artist-event-03-250x300.jpg',
+            location: 'New York, US',
+            text_position: 'right'
+        },
+
+        {
+            date: 'NOV 23, 2020',
+            title: 'International Art Fair 2020',
+            imgPath: 'artist-event-02-250x300.jpg',
+            location: 'Hamburg, Germany',
+            text_position: 'left'
+        },
+
+        {
+            date: 'DEC 15, 2020',
+            title: 'Street Performance: Call for Artist',
+            imgPath: 'artist-event-01-250x300.jpg',
+            location: 'Illinois, US',
+            text_position: 'left'
+        },
+
+    ],
+
     activeTestimonial: 0,
 })
