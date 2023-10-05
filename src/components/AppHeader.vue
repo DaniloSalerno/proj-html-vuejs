@@ -89,6 +89,5 @@ header {
             padding: 0.1rem 2.25rem;
         }
     }
-
 }
 </style>

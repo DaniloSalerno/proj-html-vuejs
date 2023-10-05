@@ -7,19 +7,19 @@ export const state = reactive({
     cardCoaching: [
         {
             title: 'Online Coures',
-            content: ' Online art coasching now offers you s very powerful way to redesign you artist mind.',
+            content: ' Online art coaching now offers you s very powerful way to redesign you artist mind.',
             imgPath: 'artist-box-image-01.png',
             id: 1
         },
         {
             title: 'One to One',
-            content: 'Gettin the necessary clarity about the current state to help you imrove your ability.',
+            content: 'Gettin the necessary clarity about the current state to help you improve your ability.',
             imgPath: 'artist-box-image-02.png',
             id: 2
         },
         {
             title: 'Anywhere',
-            content: 'Access to valurable and portable program which allow you to setup and live anywhere you want.',
+            content: 'Access to valuable and portable program which allow you to setup and live anywhere you want.',
             imgPath: 'artist-box-image-03.png',
             id: 3
         },
